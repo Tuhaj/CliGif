@@ -11,6 +11,12 @@ require 'dotenv'
 Dotenv.load
 
 require "pry"
-Pry.start
 
-include CliGif
+class Runner
+  include CliGif
+end
+
+
+cli_gif = Runner.new
+response = cli_gif.get_first_search_result('frodo')
+puts response
