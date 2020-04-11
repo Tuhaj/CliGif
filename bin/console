@@ -18,5 +18,6 @@ end
 
 
 cli_gif = Runner.new
-response = cli_gif.get_first_search_result('frodo')
+
+response = cli_gif.get_first_search_result(ARGV[0] || 'nothing')
 puts response
