@@ -5,3 +5,6 @@ gemspec
 
 gem "rake", "~> 12.0"
 gem "rspec", "~> 3.0"
+gem 'rest-client', '~> 2.1'
+gem 'pry'
+gem 'dotenv'
