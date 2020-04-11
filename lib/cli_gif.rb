@@ -20,6 +20,6 @@ module CliGif
   def get_first_search_result(query)
   	response = get_response(query)
   	gif = response['data'][0]
-  	gif['embed_url']
+  	gif['url']
   end
 end
